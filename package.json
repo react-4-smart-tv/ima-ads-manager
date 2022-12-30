@@ -1,0 +1,54 @@
+{
+  "name": "@react4tv/ima-ads-manager",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "IMA Ads SmartTV",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "prepack": "yarn build",
+    "prebuild": "yarn clean",
+    "build": "rollup -c",
+    "clean": "rimraf lib my-react-package-*.tgz",
+    "watch": "rollup -cw"
+  },
+  "author": "Nguyễn Sỹ Thành Công <thanhcongns94@gmail.com>",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.49.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "tslib": "^2.4.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-4-smart-tv/ima-ads-manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react-4-smart-tv/ima-ads-manager/issues"
+  },
+  "homepage": "https://github.com/react-4-smart-tv/ima-ads-manager#readme",
+  "keywords": [
+    "tv",
+    "smarttv",
+    "smart-tv",
+    "tizen",
+    "webos",
+    "samsung",
+    "lg"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
